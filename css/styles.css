@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "roboto", sans-serif;
+  text-align: center;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  text-align: center;
+  background-image: url("../assets/rps.png");
+  background-size: cover;
+  filter: invert(1);
+  background-position: center;
+}
+
+.game-container {
+  filter: invert(1)
+}
+
+div.row {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.box {
+  padding: 0.5rem;
+}
+
+.score {
+  font-size: 2rem;
+}
+
+#opponentChoice {
+  font-size: 2rem;
+}
+
+.choices {
+  display: inline-flex;
+  text-align: center;
+  table-layout: fixed;
+  width: 17%;
+  margin: 100px auto;
+  align-items: center;
+}
+
+.player_action {
+  display: inline-flex;
+  text-align: center;
+  table-layout: fixed;
+  align-items: center;
+  width: 6.3rem;
+  height: 6.3rem;
+}
+
+.player_scissors:hover img {
+  transform: scale(1.1);
+}
+
+.player_scissors img {
+  transition: transform 0.2s ease-in-out;
+}
+
+.player_rock {
+  overflow: hidden;
+  position: relative;
+}
+
+.player_rock:hover img {
+  transform: scale(1.1);
+}
+
+.player_rock img {
+  transition: transform 0.2s ease-in-out;
+}
+
+.player_paper {
+  overflow: hidden;
+  position: relative;
+}
+
+.player_paper:hover img {
+  transform: scale(1.1);
+}
+
+.player_paper img {
+  transition: transform 0.2s ease-in-out;
+}
+
+.result-message {
+  padding-bottom: 7rem;
+}
+
+.res {
+  width: 6.3rem;
+  height: 6.3rem;
+}
+
+.resetButton {
+  background-color: black;
+  color: white;
+  border: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.resetButton:hover {
+  background-color: #333;
+}
