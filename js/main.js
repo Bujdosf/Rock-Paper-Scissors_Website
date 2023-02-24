@@ -42,7 +42,7 @@ function playRound(playerSelection, computerSelection) {
         localStorage.setItem("cpuScore", cpuScore);
     }
 
-    const myDiv = document.getElementById('round choices');
+    const myDiv = document.getElementById('round_choices');
     if (myDiv.innerHTML.trim() === '') {
         myDiv.innerHTML = `
         <span> You -> </span>
@@ -60,7 +60,7 @@ function playRound(playerSelection, computerSelection) {
     }
 
     if (userScore > 0 || cpuScore > 0) {
-        document.getElementById('resetButton').innerHTML = '<button onclick = "resetScores()" > Click this if you want to reset the scores!</button > ';
+        document.getElementById('resetButton').innerHTML = '<button onclick = "resetScores()"> Click this if you want to reset the scores!</button > ';
     }
 
 
@@ -79,7 +79,7 @@ function playRound(playerSelection, computerSelection) {
     document.getElementById("userScore").innerHTML = userScore;
     document.getElementById("cpuScore").innerHTML = cpuScore;
     document.getElementById("result").innerHTML = result;
-    document.getElementById("result").setAttribute("style", "text-align: center; font-size: 3.5rem; font-weight: bold; color: white; margin-inline-end: 3rem;");
+    document.getElementById("result").setAttribute("style", "text-align: center; font-size: 3.5rem; font-weight: bold; margin-inline-end: 3rem;");
 
 }
 

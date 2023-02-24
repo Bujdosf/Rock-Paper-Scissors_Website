@@ -1,45 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
 
 <head>
   <meta charset="UTF-8" />
   <title>Rock-Paper-Scissors!</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="" />
+  <meta name="description" content="Rock-Paper-Scissors Website" />
   <link rel="stylesheet" type="text/css" href="css/styles.css" />
-  <link rel="icon" href="favicon.png" />
   <script src="js/main.js"></script>
 </head>
 
 <body>
-  <div class="game-container">
-    <h1>Rock Paper Scissors</h1>
-    <div class="choices">
-      <div class="player_rock">
-        <img src="assets/rock.png" id="rock" class="player_action"
-          onclick="playRound('rock', computerPlay())" /><br />Rock
-      </div>
-      <div class="player_paper">
-        <img src="assets/paper.png" id="paper" class="player_action"
-          onclick="playRound('paper', computerPlay())" /><br />Paper
-      </div>
-      <div class="player_scissors">
-        <img src="assets/scissors.png" id="scissors" class="player_action"
-          onclick="playRound('scissors', computerPlay())" /><br />Scissors
-      </div>
+  <h1>Rock Paper Scissors</h1>
+  <div class="choices">
+    <div class="player_rock">
+      <img src="assets/rock.png" id="rock" class="player_action"
+        onclick="playRound('rock', computerPlay())" /><br />Rock
     </div>
-    <div id="message-display"></div>
-    <div class="score" id="scoreBoard">
-      You -> <span id="userScore">0</span> : <span id="cpuScore">0</span> &lt- CPU
+    <div class="player_paper">
+      <img src="assets/paper.png" id="paper" class="player_action"
+        onclick="playRound('paper', computerPlay())" /><br />Paper
     </div>
-
-    <div id="result" class="result-message"></div>
-    <div id="resetButton"></div>
-    <div id="round choices" class="choices"></div>
+    <div class="player_scissors">
+      <img src="assets/scissors.png" id="scissors" class="player_action"
+        onclick="playRound('scissors', computerPlay())" /><br />Scissors
+    </div>
   </div>
+  <div id="message-display"></div>
+  <div class="score" id="scoreBoard">
+    You -> <span id="userScore">0</span> : <span id="cpuScore">0</span> &lt- CPU
+  </div>
+  <div id="result" class="result-message"></div>
+  <div id="resetButton"></div>
+  <div id="round_choices" class="choices"></div>
 </body>
-
-</html>
 
 </html>

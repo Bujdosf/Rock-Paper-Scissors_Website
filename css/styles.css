@@ -10,16 +10,15 @@ body {
   height: 100%;
 }
 
+h1 {
+  color: white;
+}
+
 body {
   text-align: center;
   background-image: url("../assets/rps.png");
   background-size: cover;
-  filter: invert(1);
   background-position: center;
-}
-
-.game-container {
-  filter: invert(1)
 }
 
 div.row {
@@ -47,6 +46,7 @@ div.row {
   width: 17%;
   margin: 100px auto;
   align-items: center;
+  color: white;
 }
 
 .player_action {
@@ -101,18 +101,22 @@ div.row {
   height: 6.3rem;
 }
 
-.resetButton {
-  background-color: black;
+#resetButton {
   color: white;
-  border: 2rem;
-  padding: 1rem 2rem;
-  border-radius: 3rem;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
 }
 
-.resetButton:hover {
-  background-color: #333;
+#resetButton:hover {
+  cursor: pointer;
+}
+
+#scoreBoard {
+  color: white;
+}
+
+.result-message {
+  color: white;
 }
